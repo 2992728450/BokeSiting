@@ -1,0 +1,105 @@
+.navigation {
+  flex-direction: row;
+  width: 100%;
+  text-align: center;
+  color: #0e7e46;
+  box-shadow: 0 2px 0 #f2f2f2;
+  margin-top: 5px;
+  font-size: 36rpx;
+}
+.navigation view {
+  display: inline-block;
+  color: #b4b4b4;
+  width: 24%;
+  text-align: center;
+  line-height: 44px;
+}
+.navigation image {
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+}
+.navigation text {
+  clear: both;
+}
+.navigation .active {
+  color: #eb5a1e;
+  box-shadow: 0 2px 0 #eb5a1e;
+}
+.item {
+  position: relative;
+}
+.thumbnail {
+  width: 30%;
+  border: solid 1px #f2f2f2;
+  border-radius: 2px;
+  box-sizing: border-box;
+  float: left;
+}
+.intro {
+  width: 70%;
+  float: left;
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+  color: #333;
+  padding-right: 50px;
+}
+.intro .name {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #222;
+}
+.intro .meta {
+  font-size: 12px;
+}
+.intro .meta view {
+  display: inline-block;
+  margin-right: 8px;
+}
+.intro .meta image {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.views {
+  color: #c779d0;
+}
+.views image {
+  margin-right: 2px;
+}
+.likes {
+  color: #4bc0c8;
+}
+.comments {
+  color: #feac5e;
+}
+.intro .excerpt {
+  font-size: 24rpx;
+  margin-top: 3px;
+  line-height: 1.4em;
+  color: #888;
+}
+.btn-play,.btn-stop {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: solid 1px #ee938d;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  box-sizing: border-box;
+  margin-top: -22px;
+}
+.packages image {
+  width: 100%;
+}
+.about view {
+  padding: 15px;
+  box-sizing: border-box;
+  text-indent: 2rem;
+  line-height: 1.5rem;
+  color: #222;
+}
