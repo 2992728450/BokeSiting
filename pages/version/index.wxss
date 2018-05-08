@@ -1,0 +1,12 @@
+/* pages/version/index.wxss */
+page {
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.description {
+  font-size: 90%;
+  color: #808080;
+  padding: 15px 40px;
+  box-sizing: border-box;
+}

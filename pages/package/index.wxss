@@ -103,3 +103,55 @@
   line-height: 1.5rem;
   color: #222;
 }
+.unLoad{
+  background:#4bc0c8;
+  width:84rpx;
+  height: 84rpx;
+  border-radius: 50%;
+  border:none;
+  /* overflow: hidden; */
+  position: fixed;
+  bottom: 50rpx;
+  left: 10px;
+}
+.userHead{
+  width:84rpx;
+  height: 84rpx;
+  border-radius: 50%;
+}
+.unLoad .username{
+  font-size: 24rpx;
+  position: absolute;
+  top: 90rpx;
+  left: 3px;
+  color:#fff;
+  text-shadow: 0 1px 3px #000;
+}
+
+.user{
+  width:84rpx;
+  height: 84rpx;
+  border-radius: 50%;
+  border:none;
+  /* overflow: hidden; */
+  position: fixed;
+  bottom: 50rpx;
+  left: 10px;
+}
+.user .username{
+  font-size: 24rpx;
+  position: absolute;
+  top: 90rpx;
+  left: 12px;
+  color:#fff;
+  text-shadow: 0 1px 3px #000;
+}
+.Advertisement{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.Advertisement image{
+  width:700rpx;
+  height: 189rpx;
+}

@@ -1,0 +1,50 @@
+
+<view class="list">
+    <view class="item" hover-class="none">
+       <image class="thumbnail" mode="widthFix" src="/images/no_pic.jpg"></image>
+        <view class="intro">
+            <view class="name" bindtap='play'>我所看见的未来</view>
+            <view class="meta">
+               <view class="views">
+                  <image src="/images/eye.svg"></image>
+                  <text>3000</text>
+               </view>
+               <view class="likes">
+                  <image src="/images/heart.svg"></image>
+                  <text>999</text>
+               </view>
+               <view class="comments">
+                  <image src="/images/comments.svg"></image>
+                  <text>520</text>
+               </view>
+            </view>
+            <view class="excerpt">胡慎之 最懂关系的心理学家；CCTV《心理访谈》特邀嘉宾；湖南卫视《变形记》特邀嘉宾</view>
+        </view>
+        <image class="btn-play" src="/images/play.png"></image>
+        <image hidden="hidden" class="btn-stop" src="/images/stop.png"></image>
+    </view>
+    <view class="item" hover-class="none">
+       <image class="thumbnail" mode="widthFix" src="/images/no_pic.jpg"></image>
+        <view class="intro">
+            <view class="name" bindtap='play'>我所看见的未来</view>
+            <view class="meta">
+               <view class="views">
+                  <image src="/images/eye.svg"></image>
+                  <text>3000</text>
+               </view>
+               <view class="likes">
+                  <image src="/images/heart.svg"></image>
+                  <text>999</text>
+               </view>
+               <view class="comments">
+                  <image src="/images/comments.svg"></image>
+                  <text>520</text>
+               </view>
+            </view>
+            <view class="excerpt">胡慎之 最懂关系的心理学家；CCTV《心理访谈》特邀嘉宾；湖南卫视《变形记》特邀嘉宾</view>
+        </view>
+        <image  class="btn-play" src="/images/play.png"></image>
+        <image hidden="hidden" class="btn-stop" src="/images/stop.png"></image>
+    </view>
+</view>
+

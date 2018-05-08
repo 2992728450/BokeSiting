@@ -3,7 +3,7 @@
     <view class="item" hover-class="none">
        <image class="thumbnail" mode="widthFix" src="/images/no_pic.jpg"></image>
         <view class="intro">
-            <view class="name">我所看见的未来</view>
+            <view class="name" bindtap='play'>我所看见的未来</view>
             <view class="meta">
                <view class="views">
                   <image src="/images/eye.svg"></image>
@@ -26,7 +26,7 @@
     <view class="item" hover-class="none">
        <image class="thumbnail" mode="widthFix" src="/images/no_pic.jpg"></image>
         <view class="intro">
-            <view class="name">我所看见的未来</view>
+            <view class="name" bindtap='play'>我所看见的未来</view>
             <view class="meta">
                <view class="views">
                   <image src="/images/eye.svg"></image>
@@ -43,40 +43,20 @@
             </view>
             <view class="excerpt">胡慎之 最懂关系的心理学家；CCTV《心理访谈》特邀嘉宾；湖南卫视《变形记》特邀嘉宾</view>
         </view>
-        <image hidden="hidden" class="btn-play" src="/images/play.png"></image>
-        <image class="btn-stop" src="/images/stop.png"></image>
+        <image  class="btn-play" src="/images/play.png"></image>
+        <image hidden="hidden" class="btn-stop" src="/images/stop.png"></image>
+    </view>
+    <view class='Advertisement'>
+      <image src='/images/Advertisement.jpg'></image>
     </view>
 </view>
-<view class="list packages">
-    <navigator class="item" url="/pages/package/index" hover-class="none">
-        <image src="/images/no_pic.jpg" mode="widthFix"></image>
-    </navigator>
+
+<view class='unLoad' bindtap='Load' wx:if="{{!userInfo}}">
+  <image class='userHead' src="/images/user.png"></image>
+  <text class='username'>未授权</text>
 </view>
-<view class="list about">
-    <view>在这个资讯爆炸的时代，有太多的书需要读。大部分的时候，眼球总是忙碌着，但是我们的耳朵却空闲着。为了让大家能够在日常的忙碌生活中，轻松地认识更多的好书。丛听有声书摘了解书中的重要观念，进而刺激更多人爱看书、爱买书，养成终身学习的习惯，提升中国人在世界舞台上的竞争力。因此，博客思听决定成为全球华人爱读书的小秘书，为繁忙得没有时间的您，可以随时随地地充实新知。</view>
-</view>
-<view class="list vip">
-    <view class="item" hover-class="none">
-       <image class="thumbnail" mode="widthFix" src="/images/no_pic.jpg"></image>
-        <view class="intro">
-            <view class="name">我所看见的未来</view>
-            <view class="meta">
-               <view class="views">
-                  <image src="/images/eye.svg"></image>
-                  <text>3000</text>
-               </view>
-               <view class="likes">
-                  <image src="/images/heart.svg"></image>
-                  <text>999</text>
-               </view>
-               <view class="comments">
-                  <image src="/images/comments.svg"></image>
-                  <text>520</text>
-               </view>
-            </view>
-            <view class="excerpt">胡慎之 最懂关系的心理学家；CCTV《心理访谈》特邀嘉宾；湖南卫视《变形记》特邀嘉宾</view>
-        </view>
-        <image hidden="hidden" class="btn-play" src="/images/play.png"></image>
-        <image class="btn-stop" src="/images/stop.png"></image>
-    </view>
+
+  <view class='user' bindtap='Load' wx:else>
+  <image class='userHead' src="{{userInfo.avatarUrl}}"></image>
+  <text class="username">我</text>
 </view>

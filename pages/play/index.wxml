@@ -1,0 +1,140 @@
+<view class='body' style='position:{{ban_scroll}};left:0%;top:0%;'>
+<image src="/images/slider.jpg" bindload="imageLoad" style="height:{{imgheight}}px;width:{{imgwidth}}px;"></image>
+
+<view class='title'>
+  <view class='left'>
+    <view class='name'>贾伯斯傳JOBS</view>
+    <view class="meta">
+      <view class="likes">
+        <image src="/images/heart.svg"></image>
+        <text>收藏</text>
+      </view>
+      <view class="comments">
+        <image src="/images/comments.svg"></image>
+        <text>评论</text>
+      </view>
+      <view class="share">
+        <image src="/images/share.svg"></image>
+        <text>分享</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='right'>
+   <image  class="btn-play" src="/images/play.png" bindtap='show'></image>
+   <image hidden="hidden" class="btn-stop" src="/images/stop.png"></image>
+  </view>
+</view>
+
+
+
+<view class='content'>
+  <view>这是贾伯斯生前唯一授权的传记，完整记载他的一生。</view>
+  <view>本书纪录贾伯斯从出生到死亡的历程，完整呈现贾伯斯最后的身影，并收录了许多贾伯斯个人从未曝光过的珍贵照片，势必在全球书市引发热潮。人人都知道贾伯斯不遗馀力地捍卫隐私，这位传奇性的企业家从未写过回忆录，但他在两年间，接受本书作者艾萨克森多达四十次的深入访谈，并允许他遍访他的朋友、亲戚、竞争对手、仇人和同事，总数超过一百人。</view>
+</view>
+
+
+<view class='comment'>
+  <view class='name'>评论</view>
+  <view class='comments'>
+      <view class='list'>
+          <view class='userhead'>
+          <image  src="/images/user.png">
+          </image></view>
+          <view class='center'>
+          <view class='username'>总裁商学院会员1号</view>
+          <view class='comm'>很不错的一本书</view>
+          </view>
+          <view class='time'>2018年5月7日</view>
+      </view>
+      <view class='list'>
+          <view class='userhead'>
+          <image src="/images/user.png">
+          </image></view>
+          <view class='center'>
+          <view class='username'>总裁商学院会员2号</view>
+          <view class='comm'>推荐收听</view>
+          </view>
+          <view class='time'>2018年5月7日</view>
+      </view>
+
+      <view class='more'>下拉加载更多</view>
+
+      <textarea class='submit' ></textarea>
+      <button class='btn'>提交</button>
+  </view>
+</view>
+
+<view class='interested'>
+  <view class='title'>您可能感兴趣的</view>
+
+  <view class="list">
+    <view class="item" hover-class="none">
+       <image class="thumbnail" mode="widthFix" src="/images/no_pic.jpg"></image>
+        <view class="intro">
+            <view class="name" bindtap='play'>我所看见的未来</view>
+            <view class="meta">
+               <view class="views">
+                  <image src="/images/eye.svg"></image>
+                  <text>3000</text>
+               </view>
+               <view class="likes">
+                  <image src="/images/heart.svg"></image>
+                  <text>999</text>
+               </view>
+               <view class="comments">
+                  <image src="/images/comments.svg"></image>
+                  <text>520</text>
+               </view>
+            </view>
+            <view class="excerpt">胡慎之 最懂关系的心理学家；CCTV《心理访谈》特邀嘉宾；湖南卫视《变形记》特邀嘉宾</view>
+        </view>
+        <image class="btn-play" src="/images/play.png"></image>
+        <image hidden="hidden" class="btn-stop" src="/images/stop.png"></image>
+    </view>
+    <view class="item" hover-class="none">
+       <image class="thumbnail" mode="widthFix" src="/images/no_pic.jpg"></image>
+        <view class="intro">
+            <view class="name" bindtap='play'>我所看见的未来</view>
+            <view class="meta">
+               <view class="views">
+                  <image src="/images/eye.svg"></image>
+                  <text>3000</text>
+               </view>
+               <view class="likes">
+                  <image src="/images/heart.svg"></image>
+                  <text>999</text>
+               </view>
+               <view class="comments">
+                  <image src="/images/comments.svg"></image>
+                  <text>520</text>
+               </view>
+            </view>
+            <view class="excerpt">胡慎之 最懂关系的心理学家；CCTV《心理访谈》特邀嘉宾；湖南卫视《变形记》特邀嘉宾</view>
+        </view>
+        <image  class="btn-play" src="/images/play.png"></image>
+        <image hidden="hidden" class="btn-stop" src="/images/stop.png"></image>
+    </view>
+</view>
+</view>
+</view>
+
+<view class='unLoad' bindtap='Load' wx:if="{{!userInfo}}">
+  <image class='userHead' src="/images/user.png"></image>
+  <text class='username'>未授权</text>
+</view>
+
+  <view class='user' bindtap='Load' wx:else>
+  <image class='userHead' src="{{userInfo.avatarUrl}}"></image>
+  <text class="username">我</text>
+</view>
+
+<view class='cover' hidden='{{flag}}'>
+</view>
+ <view class='modal-box'hidden='{{flag}}' >
+    <image class='close' bindtap='close' src='/images/close.png'></image>
+    <view class='book-name'>贾伯斯傳JOBS</view>
+    <view class='book-price'>¥28</view>
+    <button class='book-join'>加入继续收听</button>
+  </view>
+

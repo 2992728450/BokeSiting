@@ -1,0 +1,9 @@
+<view class="list">
+    <view class="item" hover-class="none">
+       <image class="thumbnail" mode="widthFix" src="/images/no_pic.jpg"></image>
+        <view class="intro">
+            <view class="name">我所看见的未来</view>
+            <view class="time">收听至2分18秒</view>
+        </view>
+    </view>
+</view>

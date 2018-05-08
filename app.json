@@ -1,13 +1,18 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
+    "pages/logs/logs",
     "pages/package/index",
-    "pages/logs/logs"
+    "pages/account/index",
+    "pages/history/index",
+    "pages/favorites/index",
+    "pages/play/index",
+    "pages/version/index"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#eb5a1e",
     "navigationBarTitleText": "博客思听总裁商学院",
-    "navigationBarTextStyle":"#ffffff"
+    "navigationBarTextStyle": "#ffffff"
   }
 }
