@@ -19,7 +19,7 @@
         <text>收听历史</text>
     </navigator>
     <navigator url="/pages/version/index" class="cell" hover-class="active-cell">
-        <text>版本更新</text>
+        <text clsss="version">版本更新<text class='redpoint'></text></text>
     </navigator>
     <view  class="myservice" hover-class="active-cell">
         <text>我的服务</text>

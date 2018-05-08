@@ -40,7 +40,7 @@ image {
 } 
  .cell {
   padding: 20px;
-  position: relative;
+   position: relative; 
   box-sizing: border-box;
 } 
 .myservice {

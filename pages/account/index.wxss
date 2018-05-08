@@ -139,3 +139,17 @@
   margin: 0rpx;
   line-height: 67rpx;
 }
+
+.version{
+  position: relative;
+}
+.redpoint{
+  width:5px!important;
+  height: 5px;
+  border-radius: 50%;
+  background: red;
+  padding: 0px!important;
+  position: absolute;
+  top: 21px;
+  left: 90px;
+}
